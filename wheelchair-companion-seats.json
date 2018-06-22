@@ -1,0 +1,802 @@
+{
+    "boundaryRight": 13,
+    "boundaryLeft": 0,
+    "boundaryTop": 95,
+    "screenStart": 0,
+    "screenWidth": 13,
+    "areaCategories": [
+        {
+            "areaCategoryCode": "0000000000",
+            "seatsToAllocate": 1,
+            "seatsAllocatedCount": 1,
+            "seatsNotAllocatedCount": 0,
+            "selectedSeats": [
+                {
+                    "areaNumber": 3,
+                    "rowIndex": 0,
+                    "columnIndex": 10
+                }
+            ]
+        }
+    ],
+    "areas": [
+        {
+            "number": 3,
+            "areaCategoryCode": "0000000000",
+            "numberOfSeats": 65,
+            "columnCount": 13,
+            "description": "Cinema 3",
+            "isAllocatedSeating": "True",
+            "hasSofaSeatingEnabled": "False",
+            "rowCount": 5,
+            "left": 0,
+            "top": 95,
+            "width": 13,
+            "height": 5,
+            "rows": [
+                {
+                    "rowLabel": "A",
+                    "seats": [
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 0
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "13",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 1
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "12",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 2
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "11",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 3
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "10",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 4
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "9",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 5
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "8",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 6
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "7",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 7
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "6",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 8
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "5",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 9
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "4",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 10
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "3",
+                            "status": 4,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 11
+                            },
+                            "seatsInGroup": [
+                                {
+                                    "areaNumber": 3,
+                                    "rowIndex": 0,
+                                    "columnIndex": 11
+                                },
+                                {
+                                    "areaNumber": 3,
+                                    "rowIndex": 0,
+                                    "columnIndex": 12
+                                }
+                            ],
+                            "seatLabel": "2",
+                            "status": 7,
+                            "originalStatus": 7
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 0,
+                                "columnIndex": 12
+                            },
+                            "seatsInGroup": [
+                                {
+                                    "areaNumber": 3,
+                                    "rowIndex": 0,
+                                    "columnIndex": 11
+                                },
+                                {
+                                    "areaNumber": 3,
+                                    "rowIndex": 0,
+                                    "columnIndex": 12
+                                }
+                            ],
+                            "seatLabel": "1",
+                            "status": 3,
+                            "originalStatus": 3
+                        }
+                    ]
+                },
+                {
+                    "rowLabel": "B",
+                    "seats": [
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 0
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "13",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 1
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "12",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 2
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "11",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 3
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "10",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 4
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "9",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 5
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "8",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 6
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "7",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 7
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "6",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 8
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "5",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 9
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "4",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 10
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "3",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 11
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "2",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 1,
+                                "columnIndex": 12
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "1",
+                            "status": 0,
+                            "originalStatus": 0
+                        }
+                    ]
+                },
+                {
+                    "rowLabel": "C",
+                    "seats": [
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 0
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "13",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 1
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "12",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 2
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "11",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 3
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "10",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 4
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "9",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 5
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "8",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 6
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "7",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 7
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "6",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 8
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "5",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 9
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "4",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 10
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "3",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 11
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "2",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 2,
+                                "columnIndex": 12
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "1",
+                            "status": 0,
+                            "originalStatus": 0
+                        }
+                    ]
+                },
+                {
+                    "rowLabel": "D",
+                    "seats": [
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 0
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "13",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 1
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "12",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 2
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "11",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 3
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "10",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 4
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "9",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 5
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "8",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 6
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "7",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 7
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "6",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 8
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "5",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 9
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "4",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 10
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "3",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 11
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "2",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 3,
+                                "columnIndex": 12
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "1",
+                            "status": 0,
+                            "originalStatus": 0
+                        }
+                    ]
+                },
+                {
+                    "rowLabel": "E",
+                    "seats": [
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 0
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "13",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 1
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "12",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 2
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "11",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 3
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "10",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 4
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "9",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 5
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "8",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 6
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "7",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 7
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "6",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 8
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "5",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 9
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "4",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 10
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "3",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 11
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "2",
+                            "status": 0,
+                            "originalStatus": 0
+                        },
+                        {
+                            "position": {
+                                "areaNumber": 3,
+                                "rowIndex": 4,
+                                "columnIndex": 12
+                            },
+                            "seatsInGroup": [],
+                            "seatLabel": "1",
+                            "status": 0,
+                            "originalStatus": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
