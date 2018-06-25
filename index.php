@@ -37,6 +37,7 @@ $layout = json_decode(file_get_contents('complex.json'), true);
 </style>
 <?php 
 $area_loop = 0;
+$row_loop = 0;
 foreach( $layout['areaCategories'] as $cat):
 	$area_code = $cat['areaCategoryCode'];
 	$seatsToAllocate = $cat['seatsToAllocate'];
@@ -51,43 +52,60 @@ foreach( $layout['areaCategories'] as $cat):
 		$height = $layout['areas'][$area_loop]['height'];
 		$width = $layout['areas'][$area_loop]['width'];
 		if( $layout['areas'][$area_loop]['areaCategoryCode'] == $area_code){
-			foreach( $layout['areas'][$area_loop]['rows'] as $row ):
-				$label = $row['rowLabel'];
-	?>
-		<div class ="area">
-		<?php 
+			$cnt = 0;
+		foreach( $layout['areas'][$area_loop]['rows'] as $row ):
+		$label = !empty($row['rowLabel'])?$row['rowLabel']:''; 
 		if(empty($row['seats'])){
-			echo '<div class="item empty"> </div>';
-		}else{
-		 foreach( $row['seats'] as $seat):
-			$position_area = $seat['position']['areaNumber'];
-			$position_row_index = $seat['position']['rowIndex'];
-			$position_col_index = $seat['position']['columnIndex'];
-			$seat_label = $seat['seatLabel'];
-			$status = $seat['status'];
-			$original_status = $seat['originalStatus'];
-			$group_seats = $seat['seatsInGroup'];
-			$this_seat = $position_area.",".$position_row_index.",".$position_col_index;
-	
-			if($status == 4){
-				echo '<div class="item my">'.$label.$seat_label.'</div>';
-			}elseif($status == 0){
-				echo '<div class="item available">'.$label.$seat_label.'</div>';
-			}
-			elseif($status == 1){
-				echo '<div class="item sold">'.$label.$seat_label.'</div>';
-			}
-			else{
-				echo '<div class="item wheelchair">'.$label.$seat_label.'</div>';
-			}
+			//echo '<div class="item empty"> </div>';
+		}elseif(!isset($label)){
+			//echo '<div class="item empty"> </div>';
+		}
+		else{
+			echo '<div class ="area">';
+			$seat = $row['seats'];
+			while( $cnt < $all_seats ){
+				for($i=0; $i<$cols; $i++){
+					//print flex for each row
+				//	echo '<div class ="area">';
+					for($j=0; $j<$rows; $j++){	
+						if(isset($seat[$cnt])){
+							$position_area = $seat[$cnt]['position']['areaNumber'];
+							$position_row_index = $seat[$cnt]['position']['rowIndex'];
+							$position_col_index = $seat[$cnt]['position']['columnIndex'];
+							$seat_label = $seat[$cnt]['seatLabel'];
+							$status = $seat[$cnt]['status'];
+							$original_status = $seat[$cnt]['originalStatus'];
+							$group_seats = $seat[$cnt]['seatsInGroup'];
+							if( $position_col_index == $i){
+								if($status == 4){
+									echo '<div class="item my">'.$label.$seat_label.'</div>';
+								}elseif($status == 0){
+									echo '<div class="item available">'.$label.$seat_label.'</div>';
+								}
+								elseif($status == 1){
+									echo '<div class="item sold">'.$label.$seat_label.'</div>';
+								}
+								else{
+									echo '<div class="item wheelchair">'.$label.$seat_label.'</div>';
+								}
 
-		endforeach;
+							}else{
+								echo '<div class="item empty"> </div>';
+							}
+								
+						}
+					}
+					//echo '</div>';//end print area container
+				}
+			$cnt++;
+		}
+		echo '</div>';//end print area container
 			}
-		?>
-		</div>
-<?php
+		$row_loop++;
 		endforeach;
 		}
+	$area_loop ++;
+
 endforeach;
 ?>
 <?php
