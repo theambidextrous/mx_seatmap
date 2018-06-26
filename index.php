@@ -35,79 +35,55 @@ $layout = json_decode(file_get_contents('complex.json'), true);
   border: solid 2px #fff;
 }
 </style>
+<table>
 <?php 
 $area_loop = 0;
-$row_loop = 0;
-foreach( $layout['areaCategories'] as $cat):
-	$area_code = $cat['areaCategoryCode'];
-	$seatsToAllocate = $cat['seatsToAllocate'];
-	$seatsAllocatedCount = $cat['seatsAllocatedCount'];
-	$auto_assigned_seats = implode(",", $cat['selectedSeats'][$area_loop]);
-		//areas data
-		$all_seats = $layout['areas'][$area_loop]['numberOfSeats'];
-		$cols = $layout['areas'][$area_loop]['columnCount'];
-		$rows = $layout['areas'][$area_loop]['rowCount'];
-		$name = $layout['areas'][$area_loop]['description'];
-		$isAllocatedSeating = $layout['areas'][$area_loop]['isAllocatedSeating'];
-		$height = $layout['areas'][$area_loop]['height'];
-		$width = $layout['areas'][$area_loop]['width'];
-		if( $layout['areas'][$area_loop]['areaCategoryCode'] == $area_code){
-			$cnt = 0;
-		foreach( $layout['areas'][$area_loop]['rows'] as $row ):
-		$label = !empty($row['rowLabel'])?$row['rowLabel']:''; 
-		if(empty($row['seats'])){
-			//echo '<div class="item empty"> </div>';
-		}elseif(!isset($label)){
-			//echo '<div class="item empty"> </div>';
-		}
-		else{
-			echo '<div class ="area">';
-			$seat = $row['seats'];
-			while( $cnt < $all_seats ){
-				for($i=0; $i<$cols; $i++){
-					//print flex for each row
-				//	echo '<div class ="area">';
-					for($j=0; $j<$rows; $j++){	
-						if(isset($seat[$cnt])){
-							$position_area = $seat[$cnt]['position']['areaNumber'];
-							$position_row_index = $seat[$cnt]['position']['rowIndex'];
-							$position_col_index = $seat[$cnt]['position']['columnIndex'];
-							$seat_label = $seat[$cnt]['seatLabel'];
-							$status = $seat[$cnt]['status'];
-							$original_status = $seat[$cnt]['originalStatus'];
-							$group_seats = $seat[$cnt]['seatsInGroup'];
-							if( $position_col_index == $i){
-								if($status == 4){
-									echo '<div class="item my">'.$label.$seat_label.'</div>';
-								}elseif($status == 0){
-									echo '<div class="item available">'.$label.$seat_label.'</div>';
-								}
-								elseif($status == 1){
-									echo '<div class="item sold">'.$label.$seat_label.'</div>';
-								}
-								else{
-									echo '<div class="item wheelchair">'.$label.$seat_label.'</div>';
-								}
-
-							}else{
-								echo '<div class="item empty"> </div>';
-							}
-								
-						}
-					}
-					//echo '</div>';//end print area container
+$count = 0;
+foreach( $layout['areas'] as $a):
+	$anumber = $a['number'];
+	$acode = $a['areaCategoryCode'];
+	$aseats_count = $a['numberOfSeats'];
+	$acols = $a['columnCount'];
+	$arows_count = $a['rowCount'];
+	$arows = $a['rows'];
+	echo '<table>';	
+	foreach( array_reverse($arows) as $ar){
+		$seat_in_row = count($ar['seats']);
+		$pos_in_row = $acols;
+		$looper = 0;
+		$rlabel = !empty($ar['rowLabel'])?$ar['rowLabel']:'';
+		echo '<tr>';
+		while($looper < $pos_in_row ){
+			if(isset( $ar['seats'][$looper] )){
+			$diff = 0;
+			$seatlabel = $ar['seats'][$looper]['seatLabel'];
+				$current_ci = $ar['seats'][$looper]['position']['columnIndex'];
+				$next_ci = !empty($ar['seats'][$looper+1]['position']['columnIndex'])?$ar['seats'][$looper+1]['position']['columnIndex']:$acols;
+				$diff = $next_ci - $current_ci;
+				$rounder_up = 1;
+			if($ar['seats'][0]['position']['columnIndex'] != 0 && $looper == 0){
+				while( $rounder_up <= $ar['seats'][0]['position']['columnIndex']){
+					echo '<td><div class="item empty"></div></td>';
+					$rounder_up++;
 				}
-			$cnt++;
-		}
-		echo '</div>';//end print area container
 			}
-		$row_loop++;
-		endforeach;
-		}
+			echo '<td><div class="item available">'.$rlabel.$seatlabel.'</div></td>';
+			$rounder_up = 1;
+			while($rounder_up < $diff){
+				echo '<td><div class="item empty"></div></td>';
+				$rounder_up++;
+			}
+			
+			}
+			$looper++;
+		}	
+		echo '</tr>';
+	}
+	echo '</table>';
 	$area_loop ++;
-
 endforeach;
 ?>
+</table>
 <?php
 echo '<pre>';
 print_r($layout);
